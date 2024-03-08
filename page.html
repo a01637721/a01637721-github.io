@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./App.js"></script>
+    <title>Tutorial</title>
+    <!-- Enlace al archivo CSS de Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="font-sans bg-gray-100 text-lg">
+
+    <header class="text-center py-6 bg-gray-200">
+        <h1 class="text-4xl font-bold">NODE.JS Tutorial</h1>
+    </header>
+
+    <main class="container mx-auto my-16">
+
+        <section class="mb-12">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" alt="Logo de Node.JS" class="mx-auto max w-60 h-auto rounded shadow-lg mb-4 float-end">
+            <!--h2 class="text-2xl font-semibold">Introducción</h2>
+            <p class="text-gray-800">Bienvenido al tutorial de [Nombre del Tutorial]. En este tutorial, aprenderás...</p-->
+                <h1 class="text-4xl font-bold mb-4">¿Qué es Node.js?</h1>
+            <p class="text left-4 text-lg">
+                Node.js es un entorno de ejecución de JavaScript que te permite ejecutar
+                código del lado del servidor. Con Node.js, puedes usar JavaScript tanto
+                en el servidor como en el navegador, lo que facilita la construcción de
+                aplicaciones web completas con un solo lenguaje de programación.
+                <br></br>
+                 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=xJzzu7MVZXw&embeds_referring_euri=https%3A%2F%2Fdi3g0r.github.io%2F&source_ve_path=Mjg2NjY&feature=emb_logo" title="¿Qué es Node?" frameborder="0" allowfullscreen class="mx-auto"></iframe>
+            </p>
+            
+
+      <h1 class="text-4xl font-bold mt-8">¿Qué es un API?</h1>
+      <p>
+        API (Interfaz de Programación de Aplicaciones) es un conjunto de reglas
+        y herramientas que permite a diferentes programas informáticos
+        comunicarse entre sí. una API no es más que una regla o mecanismo que permite
+        que 2 aplicaciones puedan comunicarse entre ellas. Muchas de las aplicaciones
+        que usamos día a día usan APIs, por ejemplo nuestra aplicación del clima utiliza
+        una para comunicarse con una aplicación o base de datos que contiene la información
+        del clima. Por lo tanto, en resumidas cuentas, una API es una forma de mensajería
+        entre apps para integrar apps que ya existen con una nueva.
+        <br></br>
+        <img src="https://static.platzi.com/media/user_upload/Captura-d336ab2e-8e2d-40a4-808a-ee3da1fbdaef-597e9e5e-eae6-4151-b617-7e145404d7ab.jpg" alt="Ejemplo de API" class="mx-auto max w-80 h-auto rounded shadow-lg mb-4 float-end">
+      </p>
+      <h1 class="text-4xl font-bold mt-8">¿Para que sirve una API?</h1>
+      <p>
+        Las API se utilizan para integrar nuevas aplicaciones con los sistemas
+        de software existentes. Esto aumenta la velocidad de desarrollo, ya que
+        no hay que escribir cada funcionalidad desde cero. Puede utilizar las
+        API para aprovechar el código existente.
+      </p>
+        </section>
+
+        <section class="mb-12">
+            <!--h2 class="text-2xl font-semibold">Sección 1: [Nombre de la Sección]</h2>
+            <p class="text-gray-800">Aquí puedes proporcionar información detallada sobre la primera sección del tutorial.</p>
+            <code class="bg-gray-300 px-3 py-2 rounded">/* Ejemplo de código o comandos */</code-->
+                <h1 class="text-4xl font-bold mt-8">Solicitud GET:</h1>
+      <p>
+        Una solicitud GET es una forma de pedir datos al servidor web, y es una
+        de las formas más comunes de interacción entre clientes y servidores en
+        la web. Cuando escribes una URL en tu navegador y presionas Enter, tu
+        navegador envía una solicitud GET al servidor web para obtener la página
+        web que estás buscando. Por ejemplo, si estás buscando un libro por un número de identifiación
+        en una librería virtual, sabiendo que el número de identificación del libro es 841557, la URL
+        sería algo como:
+        <br></br>
+        https://www.libreria.com/libros/?841557
+        <br></br>
+        En este caso el servidor web recibe la solicitud GET y busca el libro con el número de identificación (841557). 
+        El símbolo '?'', nos indica donde inician los parámetros enviados por el usuario.
+
+      </p>
+      <h1 class="text-4xl font-bold mt-8">Solicitud POST:</h1>
+      <p>
+        Una solicitud POST es una forma de enviar datos desde un cliente a un
+        servidor para su procesamiento, y es útil cuando se necesitan enviar
+        grandes cantidades de datos mientras se mantiene la seguridad. Por ejemplo, si
+        estás comprando un libro en una librería virtual, y necesitas enviar tu información
+        personal y de pago, la URL sería algo como:
+        <br></br>
+        https://www.libreria.com/comprar
+        <br></br>
+        En este caso el servidor web recibe la solicitud POST y procesa la información enviada por el usuario, 
+        por medio de la acción comprar, y realiza la transacción. Toda la información se envía en el cuerpo de la 
+        solicitud en vez de estar visible en la URL. 
+
+      </p>
+        </section>
+<!--SPOTIFY API-->
+        <section class="mb-12">
+                <h1 class="text-4xl font-bold mt-8">API de Spotify</h1>
+        <p>
+            Spotify es una de las aplicaciones de música más populares en el mundo, y
+            tiene una API que permite a los desarrolladores acceder a su base de datos
+            de música y a sus funciones de reproducción. La API de Spotify es una de
+            las más utilizadas en el mundo, y es una excelente manera de aprender a
+            trabajar con APIs. Puedes encontrar más información sobre la API de Spotify
+            en la <a href="https://developer.spotify.com/documentation/web-api/" class="text-blue-500">documentación oficial</a>.
+            <br></br>
+            <img src="https://developer.spotify.com/images/blog/default-opengraph-image.png" alt="Ejemplo de API" class="mx-auto max w-80 h-auto rounded shadow-lg mb-4 float-end">
+        </p>
+        <h2 class="text-4xl font-bold mt-8">Pasos para el uso de la API de Spotify</h1>
+            <p> 
+                Primero tenemos que crear un nuevo documento de JavaScript al que llamaremos ‘app.js’ 
+                (la terminación de los archivos de JavaScript es .js). Dspués, declaramos una constante 
+                llamada http utilizando el módulo http de Node.js, HTTP es un protocolo para la transferencia 
+                de datos ‘Hyper Text Transfer Protocol’, y, a continuación, creamos nuestro servidor de 
+                forma local (solo en nuestra computadora) con http.createServer
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
+                const http = require('node:http');<br>
+                const server = http.createServer(
+            </p>
+            <p>
+                En JavaScript realizamos una solicitud de token de acceso a la API de Spotify utilizando el flujo 
+                de autenticación de cliente-credenciales (client credentials flow). Para empezar, necesitamos
+                definir un endpoint de Spotify para obtener información sobre un artista específico. Así que primero creamos 
+                las opciones de method, headers y body, así como los endpoints, un endpoint es un link donde posteriormente 
+                un función llamada fetch tratará de acceder con los parámetros que se le manden.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
+                const requestOptions = {<br>
+                method: 'POST',<br>
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },<br>
+                body: 'grant_type=client_credentials&client_id=TU_CLIENT_ID<br>
+                client_secret=TU_CLIENT_SECRET'      <br> 
+                };<br>
+                <br>
+                const endpoint_spotify="https://accounts.spotify.com/api/token";<br>
+                <br>
+                const endpoint_artist = "https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb";<br>
+            </p>
+
+            <p>
+                Dentro del method usamos POST para enviar los datos de forma segura y oculta, debido a que 
+                estamos enviando información sensible como el client_id y el client_secret y no queremos que esten 
+                visibles o modificarlos. En header, definimos el link que la documentación de spotify proporciona y en 
+                body, definimos el tipo de acceso que queremos, en este caso client_credentials, y el client_id y client_secret.
+                <br></br>
+                Después, utilizamos la función fetch para realizar la solicitud de token de acceso a la API de Spotify. Aquí
+                damos como parámetros el endpoint y las requestOptions que definimos anteriormente para que sepa a dónde acceder.
+                En caso de encontrar respuesta, la función fetch nos devolverá un objeto de tipo Jason con nuestro token para que 
+                podamos hacer búsquedas en la API de Spotify.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
+                fetch(endpoint_spotify, requestOptions).then(function (r){
+                return r.json();
+                })
+            </p>
+
+            <p>
+                Una vez que tenemos el token, lo guardamos en una variable llamada token y creamos un objeto llamado artistOptions 
+                que contiene un header con el token de acceso. Después, utilizamos la función fetch para realizar la solicitud de 
+                información sobre un artista específico a la API de Spotify. Aquí damos como parámetros el endpoint y las artistOptions 
+                que definimos anteriormente para que sepa a dónde acceder y con qué token.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
+                .then(function(j){<br>
+                    token = j.access_token; <br>
+                    const artistOptions = {<br>
+                        headers: {<br>
+                            'Authorization': 'Bearer ' + token<br>
+                    }<br>
+                };<br>
+                return fetch(endpoint_artist, artistOptions);<br>
+            </p>
+            <p>
+                A continuación, utilizamos la función then para procesar la respuesta de la API de Spotify. Si la respuesta es
+                válida, la función then nos devolverá un objeto de tipo Jason con la información del artista. Si la respuesta
+                es inválida, la función then nos devolverá un error.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
+                .then(function (response) {<br>
+                    if (response.ok) {<br>
+                        return response.json();<br>
+                    } else {<br>
+                        throw new Error('Error al obtener información del artista');<br>
+                    }<br>
+                })  
+            </p>
+            <p>
+                Si va bien hasta este punto, usaremos el archivo Jason anteriormente recibido para obtener la información del artista
+                como el nombre, los géneros, el número de seguidores y la imagen. Después, creamos una constante llamada html que contiene
+                el código HTML que queremos enviar. Finalmente, utilizamos la función res.writeHead para enviar una respuesta
+                con el código de estado 200 y el tipo de contenido text/html, y utilizamos la función res.end para enviar la respuesta
+                con el código HTML que definimos anteriormente.
+            </p>
+
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
+                .then(function datos(artistData) {<br>
+                const artistName = artistData.name;<br>
+                const artistGenres = artistData.genres;<br>
+                const artistFollowers = artistData.followers.total;<br>
+                <br>
+                const imageSrc = artistData.images[0].url;<br>
+                const imageHeight = artistData.images[0].height;<br>
+                const imageWidth = artistData.images[0].width;<br>
+                <br>
+                const html = `<br>
+                h1>${artistName} h1><br>
+                img src="${imageSrc}" alt="${artistName}"><br>
+                p>Gêneros: ${artistGenres.join(', ')} p><br>
+                <br>
+                res.writeHead(200, {'Content-Type': 'text/html'});<br>
+                res.end(html);<br>
+                return html;<br>
+                })<br>
+                .catch(function (error) {<br>
+                    res.write('Error en el servidor: ' + error.message);<br>
+                    res.end();<br>
+                    });<br>
+                }); 
+            </p>
+            <p>
+                Para finalizar, es importante recordar que para que el servidor funcione, es necesario que 
+                subir el servidor en puertos locales y esperar que reciban una respuesta de las 
+                funciones para que estén disponibles y listas para recibir solicitudes.
+            </p>
+
+        </section>
+<!--OPEN WEATHER API-->
+        <section class="mb-12">
+        <h1 class="text-4xl font-bold mt-8">API de OpenWeatherMap</h1>
+        <p>
+            OpenWeatherMap es un servicio de pronóstico del tiempo que ofrece una API
+            para acceder a su base de datos de pronósticos. La API de OpenWeatherMap es
+            una excelente manera de aprender a trabajar con APIs, ya que es gratuita y
+            fácil de usar. Puedes encontrar más información sobre la API de OpenWeatherMap
+            en la <a href="https://openweathermap.org/api" class="text-blue-500">documentación oficial</a>.
+        </p>
+        <h1 class="text-4xl font-bold mt-8">API de OpenAi</h1>
+        <p>
+            OpenAI es una empresa de inteligencia artificial que ofrece una API para
+            acceder a sus modelos de lenguaje y otros servicios de IA. La API de OpenAI
+            es una excelente manera de aprender a trabajar con APIs de IA, ya que es
+            gratuita y fácil de usar. Puedes encontrar más información sobre la API de
+            OpenAI en la <a href="https://beta.openai.com/docs/" class="text-blue-500">documentación oficial</a>.
+        </p>
+
+        </section>
+
+    </main>
+
+    <footer class="text-center py-6 bg-gray-200">
+        <p class="text-gray-800">&copy; 2024 [NODE.JS Tutorial]</p>
+    </footer>
+
+</body>
+
+</html>
+
