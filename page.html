@@ -112,10 +112,12 @@
                 de datos ‘Hyper Text Transfer Protocol’, y, a continuación, creamos nuestro servidor de 
                 forma local (solo en nuestra computadora) con http.createServer
             </p>
-            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
+            <br></br>
+            <p class="text-md px-4 py-2 bg-gray-700 text-white shadow-sm rounded-md">
                 const http = require('node:http');<br>
                 const server = http.createServer(
             </p>
+            <br></br>
             <p>
                 En JavaScript realizamos una solicitud de token de acceso a la API de Spotify utilizando el flujo 
                 de autenticación de cliente-credenciales (client credentials flow). Para empezar, necesitamos
@@ -123,6 +125,7 @@
                 las opciones de method, headers y body, así como los endpoints, un endpoint es un link donde posteriormente 
                 un función llamada fetch tratará de acceder con los parámetros que se le manden.
             </p>
+            <br></br>
             <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
                 const requestOptions = {<br>
                 method: 'POST',<br>
@@ -135,7 +138,7 @@
                 <br>
                 const endpoint_artist = "https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb";<br>
             </p>
-
+            <br></br>
             <p>
                 Dentro del method usamos POST para enviar los datos de forma segura y oculta, debido a que 
                 estamos enviando información sensible como el client_id y el client_secret y no queremos que esten 
@@ -147,18 +150,20 @@
                 En caso de encontrar respuesta, la función fetch nos devolverá un objeto de tipo Jason con nuestro token para que 
                 podamos hacer búsquedas en la API de Spotify.
             </p>
+            <br></br>
             <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
                 fetch(endpoint_spotify, requestOptions).then(function (r){
                 return r.json();
                 })
             </p>
-
+            <br></br>
             <p>
                 Una vez que tenemos el token, lo guardamos en una variable llamada token y creamos un objeto llamado artistOptions 
                 que contiene un header con el token de acceso. Después, utilizamos la función fetch para realizar la solicitud de 
                 información sobre un artista específico a la API de Spotify. Aquí damos como parámetros el endpoint y las artistOptions 
                 que definimos anteriormente para que sepa a dónde acceder y con qué token.
             </p>
+            <br></br>
             <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
                 .then(function(j){<br>
                     token = j.access_token; <br>
@@ -169,11 +174,13 @@
                 };<br>
                 return fetch(endpoint_artist, artistOptions);<br>
             </p>
+            <br></br>
             <p>
                 A continuación, utilizamos la función then para procesar la respuesta de la API de Spotify. Si la respuesta es
                 válida, la función then nos devolverá un objeto de tipo Jason con la información del artista. Si la respuesta
                 es inválida, la función then nos devolverá un error.
             </p>
+            <br></br>
             <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
                 .then(function (response) {<br>
                     if (response.ok) {<br>
@@ -183,6 +190,7 @@
                     }<br>
                 })  
             </p>
+            <br></br>
             <p>
                 Si va bien hasta este punto, usaremos el archivo Jason anteriormente recibido para obtener la información del artista
                 como el nombre, los géneros, el número de seguidores y la imagen. Después, creamos una constante llamada html que contiene
@@ -190,7 +198,7 @@
                 con el código de estado 200 y el tipo de contenido text/html, y utilizamos la función res.end para enviar la respuesta
                 con el código HTML que definimos anteriormente.
             </p>
-
+            <br></br>
             <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
                 .then(function datos(artistData) {<br>
                 const artistName = artistData.name;<br>
@@ -216,6 +224,7 @@
                     });<br>
                 }); 
             </p>
+            <br></br>
             <p>
                 Para finalizar, es importante recordar que para que el servidor funcione, es necesario que 
                 subir el servidor en puertos locales y esperar que reciban una respuesta de las 
@@ -253,4 +262,3 @@
 </body>
 
 </html>
-
