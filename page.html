@@ -19,7 +19,7 @@
     <main class="container mx-auto my-16">
 
         <section class="mb-12">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" alt="Logo de Node.JS" class="mx-auto max w-60 h-auto rounded shadow-lg mb-4 float-end">
+            <img src="https://branditechture.agency/brand-logos/wp-content/uploads/wpdm-cache/Node-JS-01-900x0.png" alt="Logo de Node.JS" class="mx-auto max w-60 h-auto rounded shadow-lg mb-4 float-end">
             <!--h2 class="text-2xl font-semibold">Introducción</h2>
             <p class="text-gray-800">Bienvenido al tutorial de [Nombre del Tutorial]. En este tutorial, aprenderás...</p-->
                 <h1 class="text-4xl font-bold mb-4">¿Qué es Node.js?</h1>
@@ -29,7 +29,7 @@
                 en el servidor como en el navegador, lo que facilita la construcción de
                 aplicaciones web completas con un solo lenguaje de programación.
                 <br></br>
-                 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=xJzzu7MVZXw&embeds_referring_euri=https%3A%2F%2Fdi3g0r.github.io%2F&source_ve_path=Mjg2NjY&feature=emb_logo" title="¿Qué es Node?" frameborder="0" allowfullscreen class="mx-auto"></iframe>
+                 <iframe width="600" height="415" src="https://www.youtube.com/watch?v=xJzzu7MVZXw&embeds_referring_euri=https%3A%2F%2Fdi3g0r.github.io%2F&source_ve_path=Mjg2NjY&feature=emb_logo" title="¿Qué es Node?" frameborder="0" allowfullscreen class="mx-auto" class="rounded-2xl"></iframe>
             </p>
             
 
@@ -44,7 +44,7 @@
         del clima. Por lo tanto, en resumidas cuentas, una API es una forma de mensajería
         entre apps para integrar apps que ya existen con una nueva.
         <br></br>
-        <img src="https://static.platzi.com/media/user_upload/Captura-d336ab2e-8e2d-40a4-808a-ee3da1fbdaef-597e9e5e-eae6-4151-b617-7e145404d7ab.jpg" alt="Ejemplo de API" class="mx-auto max w-80 h-auto rounded shadow-lg mb-4 float-end">
+        <img src="https://static.platzi.com/media/user_upload/Captura-d336ab2e-8e2d-40a4-808a-ee3da1fbdaef-597e9e5e-eae6-4151-b617-7e145404d7ab.jpg" alt="Ejemplo de API" class="mx-auto max w-120 h-auto rounded-2xl shadow-lg mb-4 float-end">
       </p>
       <h1 class="text-4xl font-bold mt-8">¿Para que sirve una API?</h1>
       <p>
@@ -93,7 +93,7 @@
         </section>
 <!--SPOTIFY API-->
         <section class="mb-12">
-                <h1 class="text-4xl font-bold mt-8">API de Spotify</h1>
+                <h1 class="text-4xl font-bold mt-8" style="margin-top:5%">API de Spotify</h1>
         <p>
             Spotify es una de las aplicaciones de música más populares en el mundo, y
             tiene una API que permite a los desarrolladores acceder a su base de datos
@@ -102,9 +102,9 @@
             trabajar con APIs. Puedes encontrar más información sobre la API de Spotify
             en la <a href="https://developer.spotify.com/documentation/web-api/" class="text-blue-500">documentación oficial</a>.
             <br></br>
-            <img src="https://developer.spotify.com/images/blog/default-opengraph-image.png" alt="Ejemplo de API" class="mx-auto max w-80 h-auto rounded shadow-lg mb-4 float-end">
+            <img src="https://developer.spotify.com/images/blog/default-opengraph-image.png" alt="Ejemplo de API" class="mx-auto max w-90 h-auto rounded-3xl shadow-lg mb-4 float-end" style="margin-top:1%; margin-bottom:3%">
         </p>
-        <h2 class="text-4xl font-bold mt-8">Pasos para el uso de la API de Spotify</h1>
+        <h2 class="text-4xl font-bold mt-8" style="margin-top:2%; margin-bottom:2%">Pasos para el uso de la API de Spotify</h1>
             <p> 
                 Primero tenemos que crear un nuevo documento de JavaScript al que llamaremos ‘app.js’ 
                 (la terminación de los archivos de JavaScript es .js). Dspués, declaramos una constante 
@@ -112,12 +112,10 @@
                 de datos ‘Hyper Text Transfer Protocol’, y, a continuación, creamos nuestro servidor de 
                 forma local (solo en nuestra computadora) con http.createServer
             </p>
-            <br></br>
-            <p class="text-md px-4 py-2 bg-gray-700 text-white shadow-sm rounded-md">
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
                 const http = require('node:http');<br>
-                const server = http.createServer(
+                const server = http.createServer;
             </p>
-            <br></br>
             <p>
                 En JavaScript realizamos una solicitud de token de acceso a la API de Spotify utilizando el flujo 
                 de autenticación de cliente-credenciales (client credentials flow). Para empezar, necesitamos
@@ -125,8 +123,7 @@
                 las opciones de method, headers y body, así como los endpoints, un endpoint es un link donde posteriormente 
                 un función llamada fetch tratará de acceder con los parámetros que se le manden.
             </p>
-            <br></br>
-            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
                 const requestOptions = {<br>
                 method: 'POST',<br>
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },<br>
@@ -138,7 +135,7 @@
                 <br>
                 const endpoint_artist = "https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb";<br>
             </p>
-            <br></br>
+
             <p>
                 Dentro del method usamos POST para enviar los datos de forma segura y oculta, debido a que 
                 estamos enviando información sensible como el client_id y el client_secret y no queremos que esten 
@@ -150,21 +147,19 @@
                 En caso de encontrar respuesta, la función fetch nos devolverá un objeto de tipo Jason con nuestro token para que 
                 podamos hacer búsquedas en la API de Spotify.
             </p>
-            <br></br>
-            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
                 fetch(endpoint_spotify, requestOptions).then(function (r){
                 return r.json();
                 })
             </p>
-            <br></br>
+
             <p>
                 Una vez que tenemos el token, lo guardamos en una variable llamada token y creamos un objeto llamado artistOptions 
                 que contiene un header con el token de acceso. Después, utilizamos la función fetch para realizar la solicitud de 
                 información sobre un artista específico a la API de Spotify. Aquí damos como parámetros el endpoint y las artistOptions 
                 que definimos anteriormente para que sepa a dónde acceder y con qué token.
             </p>
-            <br></br>
-            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
                 .then(function(j){<br>
                     token = j.access_token; <br>
                     const artistOptions = {<br>
@@ -174,14 +169,12 @@
                 };<br>
                 return fetch(endpoint_artist, artistOptions);<br>
             </p>
-            <br></br>
             <p>
                 A continuación, utilizamos la función then para procesar la respuesta de la API de Spotify. Si la respuesta es
                 válida, la función then nos devolverá un objeto de tipo Jason con la información del artista. Si la respuesta
                 es inválida, la función then nos devolverá un error.
             </p>
-            <br></br>
-            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
                 .then(function (response) {<br>
                     if (response.ok) {<br>
                         return response.json();<br>
@@ -190,7 +183,6 @@
                     }<br>
                 })  
             </p>
-            <br></br>
             <p>
                 Si va bien hasta este punto, usaremos el archivo Jason anteriormente recibido para obtener la información del artista
                 como el nombre, los géneros, el número de seguidores y la imagen. Después, creamos una constante llamada html que contiene
@@ -198,8 +190,8 @@
                 con el código de estado 200 y el tipo de contenido text/html, y utilizamos la función res.end para enviar la respuesta
                 con el código HTML que definimos anteriormente.
             </p>
-            <br></br>
-            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md">
+
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md"style="margin-top:2%; margin-bottom:2%">
                 .then(function datos(artistData) {<br>
                 const artistName = artistData.name;<br>
                 const artistGenres = artistData.genres;<br>
@@ -224,7 +216,6 @@
                     });<br>
                 }); 
             </p>
-            <br></br>
             <p>
                 Para finalizar, es importante recordar que para que el servidor funcione, es necesario que 
                 subir el servidor en puertos locales y esperar que reciban una respuesta de las 
@@ -234,22 +225,196 @@
         </section>
 <!--OPEN WEATHER API-->
         <section class="mb-12">
-        <h1 class="text-4xl font-bold mt-8">API de OpenWeatherMap</h1>
+        <h1 class="text-4xl font-bold mt-8" style="margin-top:5%">API de OpenWeatherMap</h1>
         <p>
             OpenWeatherMap es un servicio de pronóstico del tiempo que ofrece una API
             para acceder a su base de datos de pronósticos. La API de OpenWeatherMap es
             una excelente manera de aprender a trabajar con APIs, ya que es gratuita y
             fácil de usar. Puedes encontrar más información sobre la API de OpenWeatherMap
             en la <a href="https://openweathermap.org/api" class="text-blue-500">documentación oficial</a>.
+            <img src="https://brands.home-assistant.io/_/openweathermap/logo.png" alt="Ejemplo de API" class="mx-auto max w-150 h-auto rounded-3xl shadow-lg mb-4 float-end" style="margin-top:5%; margin-bottom:3%">
         </p>
-        <h1 class="text-4xl font-bold mt-8">API de OpenAi</h1>
+        <h2 class="text-4xl font-bold mt-8" style="margin-top:2%; margin-bottom:2%">Pasos para el uso de la API de OpenWeatherMap</h1>
+            <p> 
+                Primero definimos una función asíncrona llamada getWeather(): En esta función, 
+                creamos un flujo de ejecución asíncrono que nos permite realizar múltiples solicitudes 
+                a la API de OpenWeatherMap sin bloquear la interfaz de usuario.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
+                async function getWeather(){
+            </p>
+            <p>
+                Despues nosotros definimos una clave de API y capturamos la ubicación ingresada por el usuario:
+                Creamos una variable llamada weatherKey que contiene nuestra clave de API para acceder a los datos
+                climáticos de OpenWeatherMap. Luego, obtenemos la ubicación que el usuario ha ingresado en el campo 
+                de entrada locationInput del documento HTML.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
+                const weatherKey = "0880fbba4dc55f0825b8b03ecbde81d3";<br>
+                const locationInput = document.getElementById("locationInput").value;
+            </p>
+            <p>
+                Después, realizamos una solicitud para obtener la latitud y longitud de la ubicación ingresada: 
+                Usamos fetch() para enviar una solicitud a la API de OpenWeatherMap para geolocalización. 
+                Esto nos proporciona información sobre la ubicación, incluyendo la latitud y la longitud que 
+                necesitamos para obtener el clima.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
+                 const locationResponse = await fetch(<br>
+                        `http://api.openweathermap.org/geo/1.0/direct?q=${locationInput}&limit=5&appid=${weatherKey}`<br>
+                );<br>
+                const locationData = await locationResponse.json(); <br>
+                const { lat, lon } = locationData[0];
+            </p>
+            <p>
+                A continuación, realizamos una solicitud para obtener los datos climáticos utilizando la latitud y longitud: 
+                Realizamos otra solicitud a la API de OpenWeatherMap para obtener los datos climáticos actuales utilizando la
+                latitud y la longitud que hemos obtenido anteriormente.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
+                const weatherResponse = await fetch(<br>
+                    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${weatherKey}`<br>
+                );<br>
+                const weatherData = await weatherResponse.json();
+            </p>
+            <p>
+                Finalmente, actualizamos el contenido HTML con los resultados del clima: Seleccionamos un elemento HTML con el
+                ID "weatherResult" y lo actualizamos con la descripción del clima obtenida de la respuesta de la API. De esta manera,
+                mostramos al usuario la descripción del clima en la ubicación que han ingresado.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
+                const weatherResultElement = document.getElementById("weatherResult");<br>
+                weatherResultElement.textContent = `El clima en ${locationInput} es: ${weatherData.weather[0].description}`;<br>
+                }
+            </p>
+
+        </section>
+        
+<!--OPENAI API-->
+        <section class="mb-12">
+        <h1 class="text-4xl font-bold mt-8" style="margin-top:5%">API de OpenAI X Spotify</h1>
         <p>
             OpenAI es una empresa de inteligencia artificial que ofrece una API para
             acceder a sus modelos de lenguaje y otros servicios de IA. La API de OpenAI
             es una excelente manera de aprender a trabajar con APIs de IA, ya que es
             gratuita y fácil de usar. Puedes encontrar más información sobre la API de
             OpenAI en la <a href="https://beta.openai.com/docs/" class="text-blue-500">documentación oficial</a>.
+            <img src="https://www.asilodigital.com/content/images/2023/02/twitter-1.png" alt="Ejemplo de API" class="mx-auto max w-auto h-auto rounded-3xl shadow-lg mb-4 float-end" style="margin-top:3%; margin-bottom:3%">
         </p>
+        <h2 class="text-4xl font-bold mt-8" style="margin-top:2%; margin-bottom:2%">Pasos para el uso de la API de OpenWeatherMap</h1>
+            <p> 
+                Primero establecemos la URL del endpoint de la API de OpenAI para completar conversaciones y creamos la función buscarAlbum
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
+                const endpointAI = "https://api.openai.com/v1/chat/completions";<br>
+                function buscarAlbum() {
+            </p>
+            <p>
+                Después, Obtenemos el valor del elemento con el ID "Album" para utilizarlo como término de búsqueda.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
+                let album = document.getElementById("Album").value;<br>
+                let Input = "Informacion sobre " + album;
+            </p>
+            <p>
+                A continuación, Definimos las opciones para la solicitud, incluyendo el método POST, los encabezados necesarios (tipo de contenido y autorización),
+                y el cuerpo de la solicitud que contiene el modelo de lenguaje y el mensaje del usuario.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
+                const opcionesAI = {<br>
+                    method: "POST",<br>
+                    headers: {<br>
+                    "Content-Type": "application/json",<br>
+                    Authorization:<br>
+                        "Bearer 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",<br>
+                    },<br>
+                    body: JSON.stringify({<br>
+                    model: "gpt-3.5-turbo",<br>
+                    messages: [{ role: "user", content: Input }],<br>
+                    }),
+                };
+            </p>
+            <p>
+                Después, Realizamos la solicitud a la API de OpenAI utilizando fetch() y las opciones que definimos anteriormente.
+                Si la solicitud es exitosa, actualizamos el contenido HTML con la respuesta del modelo de lenguaje de OpenAI.
+                Si la solicitud falla, mostramos un mensaje de error en la consola del navegador.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
+            fetch(endpointAI, opcionesAI)<br>
+                .then((response) => response.json())<br>
+                .then((data) => {<br>
+                // Mostrar el resultado en el elemento con ID 'resultado-openai'<br>
+                const resultadoElemento = document.getElementById("resultado-openai");<br>
+                resultadoElemento.textContent = data.choices[0].message.content;<br>
+                })<br>
+                .catch((error) => console.error("Error:", error));
+            </p>
+            <p>
+                Definimos las opciones para la solicitud, incluyendo el método POST, los encabezados necesarios (tipo de contenido), 
+                y el cuerpo de la solicitud que contiene las credenciales del cliente.            
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
+                const requestOptions = {<br>
+                    method: "POST",<br>
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },<br>
+                    body: "grant_type=client_credentials&client_id=f332aac31e044c98afa884e4ff48e235&client_secret=8a035584a882435fbbbcffc9e3230b69",<br>
+                };
+            </p>
+            <p>
+                Utilizamos fetch() para obtener el token de acceso de Spotify utilizando las credenciales proporcionadas.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
+                fetch(endpointSpotifyToken, requestOptions)<br>
+                    .then((response) => response.json())<br>
+                    .then((data) => {<br>
+                        const accessToken = data.access_token;<br>
+            </p>
+            <p>
+                Utilizamos el token de acceso obtenido para realizar una solicitud GET a la API de Spotify y obtener detalles sobre el álbum.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
+                return fetch(searchEndpoint, {
+                    method: "GET",
+                    headers: {
+                    Authorization: `Bearer ${accessToken}`,
+                    },
+                });
+            })
+            </p>
+            <p>
+                Llamamos a la función mostrarResultado() para mostrar los resultados obtenidos en la interfaz de usuario.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
+                 mostrarResultado(data.albums.items);
+            </p>
+            <p>
+                Creamos función mostrarResultado y después obtenemos el elemento HTML con el ID "resultado" para mostrar los resultados.
+                Vaciamos el contenedor para mostrar solo los resultados más recientes y limitamos la cantidad de álbumes a mostrar a solo los primeros tres,
+                por cada álbum, creamos un elemento HTML para mostrar su imagen y nombre, y finalmente añadimos los elementos creados al contenedor para mostrar
+                los resultados en la interfaz de usuario.
+            </p>
+            <p class="text-md px-2 py-2 bg-gray-700 text-white shadow-sm rounded-md" style="margin-top:2%; margin-bottom:2%">
+                function mostrarResultado(albums) {<br>
+                    const resultadoDiv = document.getElementById("resultado");<br>
+                    resultadoDiv.innerHTML = ""; // Limpiar resultados anteriores<br>
+                    const albumsToShow = albums.slice(0, 3); // Obtener solo los primeros tres álbumes<br>
+                    albumsToShow.forEach((album) => {<br>
+                        const albumDiv = document.createElement("div");<br>
+                        albumDiv.classList.add("album");<br>
+                        <br>
+                        const albumName = document.createElement("p");<br>
+                        albumName.textContent = album.name;<br>
+                        <br>
+                        const albumImage = document.createElement("img");<br>
+                        albumImage.classList.add("w-32", "h-auto"); // Clases de Tailwind para ajustar el tamaño de la imagen<br>
+                        albumImage.src = album.images[0].url; // La URL de la imagen está en el primer objeto de la matriz images<br>
+                        <br>
+                        albumDiv.appendChild(albumImage);<br>
+                        albumDiv.appendChild(albumName);<br>
+                        resultadoDiv.appendChild(albumDiv);<br>
+                    });<br>
+                }
+            </p>
 
         </section>
 
@@ -262,3 +427,4 @@
 </body>
 
 </html>
+
